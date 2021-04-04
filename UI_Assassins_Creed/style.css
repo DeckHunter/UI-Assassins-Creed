@@ -102,9 +102,11 @@ aside{
     
     border-bottom-left-radius: 25px;
     border-top-right-radius: 25px;
+    transition: 0.4s ease; 
 }
 .div-m button:hover{
     background-color: #3FC1AA;
+    transition: 0.4s ease; 
 }
 
 .div-2-m{
@@ -150,9 +152,11 @@ aside{
     cursor: pointer;
 
     border-radius: 360px;
+     transition: 0.4s ease; 
 }
 .div-2-m button:hover{
     background-color: #3FC1AA;
+    transition: 0.4s ease; 
 }
 /*===================================================================================================*/
 footer{
@@ -169,7 +173,5 @@ footer{
 .companies-f img{
     height: 75px;
     width: 80px;
-    border-style: solid;
-    border-color: gray;
 }
 /*===================================================================================================*/
