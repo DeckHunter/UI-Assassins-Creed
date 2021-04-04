@@ -1,0 +1,175 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+}
+.grid-l{
+    background: url("img/background.jpg");
+
+    max-height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+    grid-template-rows: 15vh 75vh 10vh;
+    grid-template-areas: "h h"
+                         "a m"
+                         "f f";
+}
+/*===================================================================================================*/
+header{
+    grid-area: h;
+    background-color: black;
+    opacity: .67;
+    display: flex;
+    justify-content: space-between;
+}
+header img{
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+}
+header a{
+    padding-top: 5.8%;
+    padding-right: 3%;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 20px;
+    color: grey;
+    text-transform: uppercase;
+    transition: 0.4s ease;
+}
+header a:hover{
+    color: white;
+    transition: 0.4s ease;
+}
+/*===================================================================================================*/
+main{
+    grid-area: m;
+
+}
+main img{
+    filter: brightness(0.90);
+}
+/*===================================================================================================*/
+aside{
+    grid-area: a;
+
+    padding-left: 5%;
+    padding-right: 10%;
+    font-size: 20px;
+
+}
+.div-m h3{
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 100;
+    font-size: 35px;
+}
+.div-m h1{
+    text-shadow: 1px 1px 3px black;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 300;
+    font-size: 60px;
+}
+.div-m p{
+    color: rgb(194, 190, 190);
+    text-shadow: 1px 1px 3px black;
+    font-weight: 500;
+    padding-bottom: 2%;
+}
+.div-m button{
+
+    background-color: #292E42;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+.div-m button:hover{
+    background-color: #3FC1AA;
+}
+
+.div-2-m{
+    margin-top: 20px;
+    color: white;
+    padding-left: 10px;
+}
+.div-2-1-m{
+    text-shadow: 1px 1px 3px black;
+    font-size: 18px;
+    display: flex;
+
+}
+.div-img{
+    padding-top: 10px;
+}
+.div-img img{
+    border-style: solid;
+    border-color: black;
+    border-radius: 15px;
+    height: 150px;
+    width: 150px;   
+    transition: 0.4s ease; 
+}
+
+.div-img img:hover{
+   filter: brightness(1.4);  
+   transition: 0.4s ease; 
+}
+.div-2-m button{
+    background-color: #292E42;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 700;
+
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+
+    border-radius: 360px;
+}
+.div-2-m button:hover{
+    background-color: #3FC1AA;
+}
+/*===================================================================================================*/
+footer{
+
+    grid-area: f;
+}
+.companies-f{
+    width: 40%;
+    height: 100%;
+    padding-left: 35px;
+    display: flex;
+    justify-content: space-between;
+}
+.companies-f img{
+    height: 75px;
+    width: 80px;
+    border-style: solid;
+    border-color: gray;
+}
+/*===================================================================================================*/
